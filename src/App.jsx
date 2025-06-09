@@ -1,12 +1,36 @@
-import './App.css';
+import { BlogNav } from "./components/BlogNav";
+import { Hero } from "./components/Hero";
+
+import { Footer } from "./components/Footer";
+import { Suggestions } from "./components/Suggestions";
+import { TravelCards } from "./components/TravelCards";
+import {Overview} from "./components/Overview"
+
+import { Data } from './Data'
 
 export function App() {
+
+  const mappedData = Data.map((item) => {
+		return (
+			<TravelCards key={item.id} item={item} />
+		)
+	})
+
   return (
-    <div className="App">
-      <h1 className="App-headline">Vite React Minimal Template</h1>
-      <p>
-        Edit <code>src/App.jsx</code> and save to test.
-      </p>
-    </div>
+    <>
+      <BlogNav />
+
+      <Hero />
+
+      <Overview/>
+    
+<br/>
+   {mappedData}
+     
+
+      <Suggestions/>
+
+      <Footer />
+    </>
   );
 }
