@@ -1,36 +1,23 @@
-import { BlogNav } from "./components/BlogNav";
-import { Hero } from "./components/Hero";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
-import { Suggestions } from "./components/Suggestions";
-import { TravelCards } from "./components/TravelCards";
-import {Overview} from "./components/Overview"
 
-import { Data } from './Data'
+import { Contact } from "./pages/Contact";
+import { About } from "./pages/About";
 
 export function App() {
-
-  const mappedData = Data.map((item) => {
-		return (
-			<TravelCards key={item.id} item={item} />
-		)
-	})
-
   return (
-    <>
-      <BlogNav />
+    <BrowserRouter>
+      <Navbar />
 
-      <Hero />
-
-      <Overview/>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
     
-<br/>
-   {mappedData}
-     
-
-      <Suggestions/>
-
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/about" element={<About/>}></Route>
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
