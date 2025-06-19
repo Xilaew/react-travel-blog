@@ -5,6 +5,8 @@ import { Footer } from "./components/Footer";
 
 import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";
+import { Register } from "./pages/LoginPage";
+import { LogInPage } from "./pages/LoginPage";
 
 export function App() {
   return (
@@ -16,6 +18,8 @@ export function App() {
     
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About/>}></Route>
+            <Route path={"/register"} element={ < Register />}/>
+           <Route path={"/logInPage"} element={ < LogInPage/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
