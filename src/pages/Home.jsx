@@ -1,5 +1,6 @@
 import { TravelCards } from "../components/TravelCards";
 import { Link } from "react-router";
+import { Cities } from "../components/Cites";
 
 
 export function Home () {
@@ -23,7 +24,9 @@ export function Home () {
     </div>
 
     <TravelCards/>
-    
+
+   
+   
   
     
     </>

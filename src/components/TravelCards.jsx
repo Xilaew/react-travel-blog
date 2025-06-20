@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-const destinations = [
+const cities = [
   {
     id: 1,
     title: "Hafen City",
@@ -72,7 +72,8 @@ export function TravelCards() {
         <h2 className="text-3xl font-bold text-center mb-8">Visited Places</h2>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> 
-          {destinations.map((id, index) => (
+         
+          {cities.map((id, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden cursor-poiter">
               <img src={id. thumbnail} alt={id.title} className="w-full h-48 object-cover transform transition duration-300 hover:scale-110" />
               <div className="p-4">
@@ -85,8 +86,11 @@ export function TravelCards() {
               </button> </Link>
               </div>
             </div>
+            
           ))}
+
         </div>
+        
       </div>
     </div>
   );
