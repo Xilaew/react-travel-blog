@@ -1,8 +1,7 @@
-import { Link } from "react-router";
 
+import { useParams, Link } from 'react-router-dom';
 
-const cities = [
-  {
+const cities = [{
     id: 1,
     title: "Hafen City",
     location:"Hamburg-Germany",
@@ -41,7 +40,7 @@ const cities = [
    startDate: "2020-06-20",
     endDate:"2020-06-20",
     thumbnail:"https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg1OTcyNDQtaW1hZ2Uta3d2eGtubHEuanBn.jpg",
-    summry: "Insights and takeaways from the third discussion.",
+    summary: "Insights and takeaways from the third discussion.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos natus molestiae at. Quisquam repellendus, inventore dolorem atque velit magni cum reprehenderit dicta, deleniti quidem voluptas nesciunt officia aliquam animi iusto." ,
     googleMapLink:"",
     long:"", 
     lat :""
@@ -62,37 +61,26 @@ const cities = [
     long:"", 
     lat :""
    
-  },
-  // more destinations can be added
-];
+  },];
 
-export function TravelCards() {
+export function CityDetail() {
+  const { id } = useParams();
+  const city = cities.find(c => c.id === parseInt(id));
+
+  if (!city) return <div className="p-6 text-red-500"> ...</div>;
+
   return (
-    <div className="py-12 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Visited Places</h2>
-
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> 
-         
-          {cities.map((id, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden cursor-poiter">
-              <img src={id. thumbnail} alt={id.title} className="w-full h-48 object-cover transform transition duration-300 hover:scale-110" />
-              <div className="p-4">
-                <h3 className="text-xl font-bold mb-2">{id.title}</h3>
-                 <h4 className="font-bold mb-2">{id.location}</h4>
-                  <h6 className=" font-italic mb-2">From {id.startDate} to {id.endDate}</h6>
-             <Link to="/cityDetails">
-            <button className="border text-white bg-blue-800   px-6 py-2  rounded-full text-lg md:text-xl hover:bg-orange-500 transform transition duration-300 hover:scale-105">
-              Read more
-              </button> </Link>
-              </div>
-            </div>
-            
-          ))}
-
-        </div>
-        
+    <div className="max-w-3xl mx-auto p-6 mt-20" >
+      <Link to="/" className="text-blue-600 hover:underline mb-4 inline-block"> Back to list</Link>
+      <img src={city.thumbnail} alt={city.title} className="w-full h-64 object-cover rounded mb-4" />
+      <h1 className="text-3xl font-bold text-gray-800 mb-2">{city.title}</h1>
+      <p className="text-gray-600 mb-2">{city.location}</p>
+      <p className="text-sm text-gray-500 mb-4">From {city.startDate} to {city.endDate}</p>
+      <div className="flex items-center mb-6">
+        <img src={city.authorPhoto} alt={city.author} className="w-10 h-10 rounded-full mr-3" />
+        <span className="text-sm text-gray-700">{city.author}</span>
       </div>
+      <p className="text-gray-800 leading-relaxed">{city.summary}</p>
     </div>
   );
 }

@@ -9,6 +9,10 @@ import { PostForm } from "./components/PostForm";
 
 import { LogInPage } from "./pages/LoginPage";
 import { Register } from "./pages/Register";
+import {CityDetail }from "./components/CityDetail";
+import { CityList } from "./components/CityList";
+
+
 
 export function App() {
   return (
@@ -22,6 +26,11 @@ export function App() {
           <Route path="/newpost" element={<PostForm/>}></Route>
             <Route path={"/logInPage"} element={ < LogInPage/>}/>
             <Route path={"/register"} element={ < Register />}/>
+            
+        <Route path="/" element={<CityList />} />
+        <Route path="/city/:id" element={<CityDetail />} />
+            
+           
          
       </Routes>
       <Footer />
