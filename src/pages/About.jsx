@@ -41,10 +41,13 @@ export function About() {
                 modi quaerat aut facilis illum cumque consequuntur repellat
                 asperiores cum mollitia odit nobis fugit cupiditate!
               </p>
+
+              
             </div>
           </div>
         </div>
       </div>
+      
     </>
   );
 }

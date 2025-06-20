@@ -5,8 +5,10 @@ import { Footer } from "./components/Footer";
 
 import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";
-import { Register } from "./pages/LoginPage";
+import { PostForm } from "./components/PostForm";
+
 import { LogInPage } from "./pages/LoginPage";
+import { Register } from "./pages/Register";
 
 export function App() {
   return (
@@ -15,11 +17,12 @@ export function App() {
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
-    
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About/>}></Route>
+          <Route path="/newpost" element={<PostForm/>}></Route>
+            <Route path={"/logInPage"} element={ < LogInPage/>}/>
             <Route path={"/register"} element={ < Register />}/>
-           <Route path={"/logInPage"} element={ < LogInPage/>}/>
+         
       </Routes>
       <Footer />
     </BrowserRouter>

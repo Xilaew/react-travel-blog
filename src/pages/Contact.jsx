@@ -67,13 +67,19 @@ export function Contact() {
                     placeholder="Leave your massege here"
                     className="w-full p-2 border border-gray-300 rounded"
                   ></textarea>
+                    
+                  
                 </div>
                 <button type="submit" className="py-2 px-4 bg-blue-500 text-white rounded">Submit your message</button>
               </form>
             </div>
+
+            
           </div>
         </div>
       </div>
+
+      
     </>
   );
 }
