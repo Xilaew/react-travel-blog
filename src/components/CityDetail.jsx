@@ -10,7 +10,7 @@ const cities = [{
     startDate: "2015.July.15",
     endDate:"2015.Aug.15",
     thumbnail:"https://live.staticflickr.com/65535/48447525277_ff7c3134dc_z.jpg",
-    summary: "New experiments and innovations are constantly playing their part in HafenCity’s increasingly ambitious development, which in many areas has also emancipated itself from the 2000 Masterplan but without losing sight of its basic idea. Because the development of HafenCity simultaneously creates an institutional framework for integrating new model projects, it provides a highly regarded platform for innovation. The city of Hamburg can thus also substantially strengthen its pioneering role in the area of forward-looking urbanity and make a significant contribution to climate-friendly and social progress.",
+    summary: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..",
     googleMapLink:"",
     long:"", 
     lat :""
@@ -25,7 +25,7 @@ const cities = [{
     startDate: "2024-06-18",
     endDate:"2014-07-18",
     thumbnail:"https://live.staticflickr.com/65535/49665369267_f64939290d_b.jpg",
-    summary: "Details on the second encounter and its impacts.",
+    summary: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..",
     googleMapLink:"",
     long:"", 
     lat :""
@@ -56,7 +56,7 @@ const cities = [{
     startDate: "2024-06-24",
     endDate:"2024-06-25",
     thumbnail:"https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJ2YW5jb3V2ZXJfY2FuYWRhXzE2ODQ0NjctaW1hZ2Uta3liY2ZldzQuanBn.jpg",
-    summary: "Insights and takeaways from the third discussion.",
+    summary: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     googleMapLink:"",
     long:"", 
     lat :""
@@ -71,7 +71,7 @@ export function CityDetail() {
 
   return (
     <div className="max-w-3xl mx-auto p-6 mt-20" >
-      <Link to="/" className="text-blue-600 hover:underline mb-4 inline-block"> Back to list</Link>
+      <Link to="/" className="text-blue-600 hover:underline mb-4 inline-block"> Back to Home Page</Link>
       <img src={city.thumbnail} alt={city.title} className="w-full h-64 object-cover rounded mb-4" />
       <h1 className="text-3xl font-bold text-gray-800 mb-2">{city.title}</h1>
       <p className="text-gray-600 mb-2">{city.location}</p>

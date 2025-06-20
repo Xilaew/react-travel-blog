@@ -10,7 +10,7 @@ const cities = [{
     startDate: "2015.July.15",
     endDate:"2015.Aug.15",
     thumbnail:"https://live.staticflickr.com/65535/48447525277_ff7c3134dc_z.jpg",
-    summary: "New experiments and innovations are constantly playing their part in HafenCity’s increasingly ambitious development, which in many areas has also emancipated itself from the 2000 Masterplan but without losing sight of its basic idea. Because the development of HafenCity simultaneously creates an institutional framework for integrating new model projects, it provides a highly regarded platform for innovation. The city of Hamburg can thus also substantially strengthen its pioneering role in the area of forward-looking urbanity and make a significant contribution to climate-friendly and social progress.",
+    summary: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.s.",
     googleMapLink:"",
     long:"", 
     lat :""
@@ -25,7 +25,7 @@ const cities = [{
     startDate: "2024-06-18",
     endDate:"2014-07-18",
     thumbnail:"https://live.staticflickr.com/65535/49665369267_f64939290d_b.jpg",
-    summary: "Details on the second encounter and its impacts.",
+    summary: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..",
     googleMapLink:"",
     long:"", 
     lat :""
@@ -40,7 +40,7 @@ const cities = [{
    startDate: "2020-06-20",
     endDate:"2020-06-20",
     thumbnail:"https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg1OTcyNDQtaW1hZ2Uta3d2eGtubHEuanBn.jpg",
-    summry: "Insights and takeaways from the third discussion.",
+    summry: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..",
     googleMapLink:"",
     long:"", 
     lat :""
@@ -56,7 +56,7 @@ const cities = [{
     startDate: "2024-06-24",
     endDate:"2024-06-25",
     thumbnail:"https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJ2YW5jb3V2ZXJfY2FuYWRhXzE2ODQ0NjctaW1hZ2Uta3liY2ZldzQuanBn.jpg",
-    summary: "Insights and takeaways from the third discussion.",
+    summary: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     googleMapLink:"",
     long:"", 
     lat :""
@@ -66,7 +66,7 @@ const cities = [{
 export function CityList() {
   return (
     <div className="max-w-6xl mx-auto p-6 mt-30">
-      <h1 className="text-3xl font-bold mb-6">Visited Cities</h1>
+      <h1 className="text-3xl text-center font-bold mb-6">Visited Cities</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cities.map(city => (
           <div key={city.id} className="bg-white rounded-lg shadow hover:shadow-lg transition">
