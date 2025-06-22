@@ -16,7 +16,7 @@ export function Navbar () {
                 <Link to="/" className="px-6 py-2 hover:bg-orange-600 hover:text-white"> Home </Link> 
                 <Link to="/contact" className="px-6 py-2 hover:bg-orange-600 hover:text-white"> Contact </Link>
                 <Link to="/about" className="px-6 py-2 hover:bg-orange-600 hover:text-white"> About </Link>
-                <Link to="/newpost" className="px-6 py-2 hover:bg-orange-600 hover:text-white"> New Post</Link>
+                <Link to="/newpostform" className="px-6 py-2 hover:bg-orange-600 hover:text-white"> New Post</Link>
                   <Link to="register" className="px-6 py-2 hover:bg-orange-600 hover:text-white"> Log in/Register</Link>
                
             </div>

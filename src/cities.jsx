@@ -1,0 +1,52 @@
+const cities =  [
+  {
+    id: 1,
+    title: "Hafen City",
+    location: "Hamburg-Germany",
+    author: "Charles Owino",
+    authorPhoto: "https://images.freeimages.com/vhq/images/previews/d86/business-man-avatar-vector-119726.png",
+    startDate: "2015.July.15",
+    endDate: "2015.Aug.15",
+    thumbnail: "https://live.staticflickr.com/65535/48447525277_ff7c3134dc_z.jpg",
+    summary: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    googleMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18968.120542636905!2d9.982008259410025!3d53.53964518011697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18efec9b6a027%3A0x1f8fb91a27e1be57!2sHafenCity%2C%20Hamburg!5e0!3m2!1sen!2sde!4v1750508182352!5m2!1sen!2sde",
+  },
+  {
+    id: 2,
+    title: "Nairobi National Park",
+    location: "Nairobi-Kenya",
+    author: "Janet Washington",
+    authorPhoto: "https://images.freeimages.com/vhq/images/previews/d86/business-man-avatar-vector-119726.png",
+    startDate: "2024-06-18",
+    endDate: "2014-07-18",
+    thumbnail: "https://live.staticflickr.com/65535/49665369267_f64939290d_b.jpg",
+    summary: "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, ...",
+    googleMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6569192511465!2d36.85844507472466!3d-1.3824922986044408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0fbbde36bc45%3A0x6f9671d1966870ec!2sNairobi%20National%20Park!5e0!3m2!1sen!2sde!4v1750508259914!5m2!1sen!2sde",
+  },
+  {
+    id: 3,
+    title: "Shanghai Tower",
+    location: "Shanghai-China",
+    author: "Irene Francis",
+    authorPhoto: "https://images.freeimages.com/vhq/images/previews/d86/business-man-avatar-vector-119726.png",
+    startDate: "2020-06-20",
+    endDate: "2020-06-20",
+    thumbnail: "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg1OTcyNDQtaW1hZ2Uta3d2eGtubHEuanBn.jpg",
+    summary: "Lorem ipsum dolor sit amet,Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. consetetur sadipscing elitr, ...",
+    googleMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.538316219803!2d121.50304307539382!3d31.233517974346583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b2706a26763e71%3A0x352a1022bb7caa28!2sShanghai%20Tower!5e0!3m2!1sen!2sde!4v1750508381873!5m2!1sen!2sde",
+  },
+  {
+    id: 4,
+    title: "Vancouver wild whale watching",
+    location: "Vancouver-Canada",
+    author: "James Mwezi",
+    authorPhoto: "https://images.freeimages.com/vhq/images/previews/d86/business-man-avatar-vector-119726.png",
+    startDate: "2024-06-24",
+    endDate: "2024-06-25",
+    thumbnail: "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJ2YW5jb3V2ZXJfY2FuYWRhXzE2ODQ0NjctaW1hZ2Uta3liY2ZldzQuanBn.jpg",
+    summary: " Amet,Stet clita kasd gubergren,Lorem ipsum dolor sit no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. consetetur sadipscing elitr, ...",
+    googleMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.268026421125!2d-123.14118451197888!3d49.27131829762524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673ce8bafdff7%3A0xcf996122d0c28c9c!2sWild%20Whales%20Vancouver!5e0!3m2!1sen!2sde!4v1750508506310!5m2!1sen!2sde",
+  }
+];
+
+export default cities;
