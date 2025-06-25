@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer";
 import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";
 
-import { LogInPage } from "./pages/LoginPage";
+import { LogInPage } from "./pages/LogInPage";
 import { Register } from "./pages/Register";
 import { CityDetail } from "./components/CityDetail";
 import { CityList } from "./components/CityList";
